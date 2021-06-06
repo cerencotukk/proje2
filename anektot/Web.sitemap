@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="" title=""  description="">
+      <siteMapNode url="default.aspx" title="Anasayfa"  description="">
+        <siteMapNode url="#" title="Kategori"  description="" >
+          <siteMapNode url="bilim.aspx" title="BİLİM"  description="" />
+          <siteMapNode url="tarih.aspx" title="TARİH"  description="" />
+          <siteMapNode url="politika.aspx" title="POLİTİKA"  description="" />
+          <siteMapNode url="sinema.aspx" title="SİNEMA"  description="" />
+          <siteMapNode url="biyografi.aspx" title="BİYOGRAFİ"  description="" />
+          <siteMapNode url="spor.aspx" title="SPOR"  description="" />
+        </siteMapNode>
+        <siteMapNode url="iletisim.aspx" title="İLETİŞİM"  description="" />
+        <siteMapNode url="giris.aspx" title="GİRİŞ"  description="" />
+      </siteMapNode>
+
+    </siteMapNode>
+</siteMap>

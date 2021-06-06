@@ -1,0 +1,10 @@
+C:\Users\ResulP\Desktop\resul_parilti\anektot\anektot\bin\anektot.dll
+C:\Users\ResulP\Desktop\resul_parilti\anektot\anektot\bin\anektot.pdb
+C:\Users\ResulP\Desktop\resul_parilti\anektot\anektot\obj\Debug\anektot.dll
+C:\Users\ResulP\Desktop\resul_parilti\anektot\anektot\obj\Debug\anektot.pdb
+C:\Users\ResulP\Desktop\resul_parilti\anektot\anektot\obj\Debug\anektot.csprojResolveAssemblyReference.cache
+C:\Users\ResulP\Desktop\resul_parilti_asp\anektot\anektot\bin\anektot.dll
+C:\Users\ResulP\Desktop\resul_parilti_asp\anektot\anektot\bin\anektot.pdb
+C:\Users\ResulP\Desktop\resul_parilti_asp\anektot\anektot\obj\Debug\anektot.csprojResolveAssemblyReference.cache
+C:\Users\ResulP\Desktop\resul_parilti_asp\anektot\anektot\obj\Debug\anektot.dll
+C:\Users\ResulP\Desktop\resul_parilti_asp\anektot\anektot\obj\Debug\anektot.pdb

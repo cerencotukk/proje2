@@ -1,0 +1,340 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="anektot.SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title>ANEKTOT | </title>    
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all" /><!-- fontawesome -->     
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all" /><!-- Bootstrap stylesheet -->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" property="" />
+<!-- stylesheet -->
+<!-- meta tags -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Blog Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //meta tags -->
+<!--fonts-->
+<link href="//fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<!--//fonts-->
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<script src="js/main.js"></script>
+<!-- Required-js -->
+<!-- main slider-banner -->
+<script src="js/skdslider.min.js"></script>
+<link href="css/skdslider.css" rel="stylesheet">
+<script type="text/javascript">
+    jQuery(document).ready(function () {
+        jQuery('#demo1').skdslider({ 'delay': 5000, 'animationSpeed': 2000, 'showNextPrev': true, 'showPlayButton': true, 'autoSlide': true, 'animationType': 'fading' });
+
+        jQuery('#responsive').change(function () {
+            $('#responsive_wrapper').width(jQuery(this).val());
+        });
+
+    });
+</script>	
+<!-- //main slider-banner --> 
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function ($) {
+        $(".scroll").click(function (event) {
+            event.preventDefault();
+            $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+        });
+    });
+</script>
+<!-- start-smoth-scrolling -->
+
+<!-- scriptfor smooth drop down-nav -->
+<script>
+    $(document).ready(function () {
+        $(".dropdown").hover(
+        function () {
+            $('.dropdown-menu', this).stop(true, true).slideDown("fast");
+            $(this).toggleClass('open');
+        },
+        function () {
+            $('.dropdown-menu', this).stop(true, true).slideUp("fast");
+            $(this).toggleClass('open');
+        }
+    );
+    });
+</script>
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+<body>
+    <form id="form1" runat="server">
+<!-- header -->
+	<header>
+		<div class="w3layouts-top-strip">
+			<div class="container">
+				<div class="logo">
+					<h1><a class="active" href="Default.aspx">ANEKTOT</a></h1>
+					<p>BİLGİ GÜÇTÜR!</p>
+				</div>
+				
+			</div>
+		</div>
+		<!-- navigation -->
+			<nav class="navbar navbar-default">
+			  <div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+				  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				  </button>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				  <ul class="nav navbar-nav">
+					<li><a href="Default.aspx">ANASAYFA</a></li>
+					<li class="dropdown">
+					  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">KATEGORİ<span class="caret"></span></a>
+					  <ul class="dropdown-menu">
+                        <li><a href="bilim.aspx">BİLİM</a></li>
+					    <li><a href="tarih.aspx">TARİH</a></li>
+					    <li><a href="politika.aspx">POLİTİKA</a></li>
+					    <li><a href="sinema.aspx">SİNEMA</a></li>
+					    <li><a href="biyografi.aspx">BİYOGRAFİ</a></li>
+					    <li><a href="spor.aspx">SPOR</a></li>
+                        
+					   <!-- <li><a href="icons.html">Icons Page</a></li> -->
+						<!-- <li><a href="typo.html">Typography</a></li> -->
+					  </ul>
+					</li>
+					<li><a href="iletisim.aspx">İLETİŞİM</a></li>
+                    <li><a href="giris.aspx">giriş</a></li>
+				  </ul>
+				</div><!-- /.navbar-collapse -->
+				<div class="w3_agile_login">
+							<div class="cd-main-header">
+								<a class="cd-search-trigger" href="#cd-search"> <span></span></a>
+								<!-- cd-header-buttons -->
+							</div>
+							<div id="cd-search" class="cd-search">
+									<input name="Search" type="search" placeholder="Ara...">
+								</div>
+						</div>
+						<div class="clearfix"> </div>
+
+			  </div><!-- /.container-fluid -->
+			</nav>
+			
+		<!-- //navigation -->
+	</header>
+	<!-- //header -->
+	<!-- top-header and slider -->
+	<div class="w3-slider">	
+	<!-- main-slider -->
+		<ul id="demo1">
+			<li>
+				<img src="images/antikent.jpg" alt="ANTİK KENT"  width="1280px" height="720px" />
+				  <div class="slide-desc">
+					<h3>ANTİK KENT </h3>
+					</div>
+			</li>
+			<li>
+				<img src="images/gobeklitepe.jpg" alt="GÖBEKLİ TEPE"  width="1280px" height="720px" />
+				<div class="slide-desc">
+					<h3>GÖBEKLİ TEPE</h3>
+					</div>
+			</li>
+            <li>
+				<img src="images/2dunya.jpg" alt="2. DÜNYA SAVAŞI"  width="1280px" height="720px" />
+				<div class="slide-desc">
+					<h3>2. DÜNYA SAVAŞI</h3>
+				</div>
+			</li>
+            <li>
+				<img src="images/neil.jpg" alt="NEİL"  width="1280px" height="720px" />
+				<div class="slide-desc">
+					<h3>NEİL</h3>
+				</div>
+			</li>
+            <li>
+				<img src="images/chaplin.jpg" alt="CHARLİ CHAPLİN"  width="1280px" height="720px" />
+				<div class="slide-desc">
+					<h3>CHARLİ CHAPLİN</h3>
+				</div>
+			</li>
+            <li>
+				<img src="images/canakkale.jpg" alt="ÇANAKKALE"  width="1280px" height="720px" />
+				<div class="slide-desc">
+					<h3>ÇANAKKALE</h3>
+				</div>
+			</li>
+            <li>
+				<img src="images/hirosima.jpeg" alt="HİROŞİMA"  width="1280px" height="720px" />
+				<div class="slide-desc">
+					<h3>HİROŞİMA</h3>
+				</div>
+			</li>
+            <li>
+				<img src="images/1dunya.jpg" alt="1.DÜNYA SAVAŞI"  width="1280px" height="720px" />
+				<div class="slide-desc">
+					<h3>1.DÜNYA SAVAŞI</h3>
+				</div>
+			</li>
+			
+		</ul>
+	</div>
+	<!-- //main-slider -->
+	<!-- //top-header and slider -->
+	<div class="container">
+		<div class="banner-btm-agile" style="margin-top: 10px;">
+		<!-- //btm-wthree-left -->
+			<div class="col-md-9 btm-wthree-left">
+				<div class="wthree-top">
+					<div class="w3agile-top">
+						<div style:margin-left=25%>
+						                            <div style:align=center>
+                                                        <asp:SiteMapPath ID="SiteMapPath1" runat="server" Font-Names="Verdana" 
+                                                            Font-Size="0.8em" PathSeparator=" ► ">
+                                                            <CurrentNodeStyle ForeColor="#333333" />
+                                                            <NodeStyle Font-Bold="True" ForeColor="#990000" />
+                                                            <PathSeparatorStyle Font-Bold="True" ForeColor="#990000" />
+                                                            <RootNodeStyle Font-Bold="True" ForeColor="#FF8000" />
+                                                        </asp:SiteMapPath>
+                                                    <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+                                                    </div>
+
+                        </div>
+					</div>
+				</div>
+				
+			<!-- flexSlider -->
+				<script defer src="js/jquery.flexslider.js"></script>
+				<script type="text/javascript">
+				    $(window).load(function () {
+				        $('.flexslider').flexslider({
+				            animation: "slide",
+				            start: function (slider) {
+				                $('body').removeClass('loading');
+				            }
+				        });
+				    });
+				</script>
+			<!-- //flexSlider -->
+			</div>
+			<!-- //btm-wthree-left -->
+				<!-- btm-wthree-right -->
+			<div class="col-md-3 w3agile_blog_left">
+				<div class="wthreesearch">
+								<input type="search" name="Search" placeholder="Bişey mi aradın?" >
+								<button type="submit" class="btn btn-default search" aria-label="Left Align">
+									<i class="fa fa-search" aria-hidden="true"></i>
+								</button>
+						
+				</div>
+				
+				<div class="agileinfo_calender">
+				<h3>SOSYAL MEDYA</h3>
+				<div class="w3ls-social-icons-1">
+					<a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
+					<a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
+					<a class="pinterest" href="#"><i class="fa fa-pinterest-p"></i></a>
+					<a class="linkedin" href="#"><i class="fa fa-rss"></i></a>
+				</div>
+				</div>
+				<div class="w3ls_popular_posts">
+					                                <div>
+                                                    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server"/>
+                                                    </div>
+				</div>
+				<div class="w3l_categories">
+					                                <div>
+                                                    <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server"/>
+                                                    </div>
+				</div>
+			    <div class="w3ls_recent_posts">
+					                                <div>
+                                                    <asp:ContentPlaceHolder ID="ContentPlaceHolder4" runat="server"/>
+                                                    </div>
+				</div>
+			    <div class="w3l_tags">
+					<h3>ETİKETLER</h3>
+					<ul class="tag">
+						<li><a href="bilim.aspx">Bilim</a></li>
+						<li><a href="tarih.aspx">Tarih</a></li>
+						<li><a href="spor.aspx">Spor</a></li>
+						<li><a href="#">Müzik</a></li>
+						<li><a href="#">Kitap</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- //btm-wthree-right -->
+			<div class="clearfix"></div>
+		</div>
+	</div>
+	<!-- footer -->
+	<div class="footer-agile-info">
+		<div class="container">
+			<div class="col-md-4 w3layouts-footer">
+				<h3>BİZİMLE İLETİŞİM KURUN</h3>
+					<p><span><i class="fa fa-envelope" aria-hidden="true"></i></span><a href="mailto:rslprlt@gmail.com?Subject=İletişim">rslprlt@gmail.com</a> </p>
+					<p><span><i class="fa fa-globe" aria-hidden="true"></i></span><a href="https://www.resulparilti.xyz"> RESUL PARILTI</a></p>
+			</div>
+			<div class="col-md-4 wthree-footer">
+				<h2>ÖNEMLİ ANEKTOTLAR</h2>
+				<p> Okuduğunuzda/gördüğünüzde şaşıracağınız bilgiler/anektotlar bu sitede. Üye olarak tarihi olayların bilinmeyen detaylarını paylaşabilirsiniz.</p>
+			</div>
+			<div class="col-md-4 w3-agile">
+				<h3>SİTEMİZİ TAKİP ET!</h3>
+				<p>Hergün bilinmeyen, tarihin tozlu sayfalarında kalmış bilgileri edinmek mi istiyorsun? O halde sitemizi takip et!</p>
+				
+			</div>
+		</div>
+	</div>
+	<!-- footer -->
+	<!-- copyright -->
+	<div class="copyright">
+		<div class="container">
+			<div class="w3ls-social-icons">
+					<a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
+					<a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
+					<a class="pinterest" href="#"><i class="fa fa-pinterest-p"></i></a>
+					<a class="linkedin" href="#"><i class="fa fa-google-plus"></i></a>
+					<a class="linkedin" href="#"><i class="fa fa-rss"></i></a>
+				</div>
+			<div class="agileinfo">
+				<p>© 2019 Resul Parıltı .&nbsp; <a href="http://w3layouts.com/">W3layouts</a> tarafından görsel tasarımı yapılmıştır.</p>
+			</div>
+		</div>
+	</div>
+<!-- //copyright -->
+<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+	    $(document).ready(function () {
+	        /*
+	        var defaults = {
+	        containerID: 'toTop', // fading element id
+	        containerHoverID: 'toTopHover', // fading element hover id
+	        scrollSpeed: 1200,
+	        easingType: 'linear' 
+	        };
+	        */
+
+	        $().UItoTop({ easingType: 'easeOutQuart' });
+
+	    });
+	</script>
+<!-- //here ends scrolling icon -->
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/bootstrap.js"></script>
+    </form>
+</body>
+
+
+</html>
